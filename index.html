@@ -24,7 +24,7 @@
                 </p>
                 <p>Hello! My name is Yue Chen (in chinese: 陈越).
                 </p>
-                <p> I am actively seeking a Ph.D. position to deepen my exploration and contribution to the fields of artificial intelligence.
+                <p> I am actively seeking a Ph.D. position to deepen my exploration and contribution to the field of artificial intelligence.
                 </p>
                 <p>
                   I completed my Master's Degree in <a href="https://www.tum.de/en/studies/degree-programs/detail/robotics-cognition-intelligence-master-of-science-msc">Robotics, Cognition, Intelligence (RCI)</a> at the <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a> in 2023, engaging in research in the <a href="https://www.niessnerlab.org/"> Computing & AI Group</a>. Prior to this, I earned my Bachelor's Degree in <a href="https://www.tum.de/en/studies/degree-programs/detail/mechanical-engineering-bachelor-of-science-bsc"> Mechanical Engineering</a> from TUM in 2021.
@@ -46,7 +46,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in computer vision, computer graphics, deep learning, generative AI, and image processing. My recent work has concentrated on neural rendering, such as 3D reconstruction, object material analysis, and relighting for NeRF.
+                  I'm interested in computer vision, computer graphics, deep learning, generative AI, and image processing. My recent work has concentrated on neural rendering, such as 3D scene reconstruction, surface material analysis, and relighting for NeRF.
                 </p>
               </td>
             </tr>
@@ -54,51 +54,112 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+            <tr onmouseout="inverser_stop()" onmouseover="inverser_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='inverser_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="imgs/Neural_Factorization.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='imgs/Neural_Factorization.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function inverser_start() {
+                    document.getElementById('inverser_image').style.opacity = "1";
+                  }
+      
+                  function inverser_stop() {
+                    document.getElementById('inverser_image').style.opacity = "0";
+                  }
+                  inverser_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+                  <span class="papertitle"> Neural Scene Decomposition for Accurate Light and Material Reconstruction via Physically-Based Global Illumination Estimation</span>
+                </a>
+                <br>
+                <strong>Yue Chen</strong>,
+                <a href="https://peter-kocsis.github.io/">Peter Kocsis</a>,
+                <a href="https://niessnerlab.org/">Matthias Nießner</a>
+                <br>
+                <em>Master's Thesis</em>, 2023
+                <br>
+                <a href="">project page</a>
+                /
+                <a href="https://github.com/YueChenGithub/neural-inverse-rendering/blob/main/docs/MA_Yue_Chen.pdf">thesis</a>
+                /
+                <a href="https://github.com/YueChenGithub/neural-inverse-rendering">code</a>
+                <p></p>
+                <p>
+                  Using multi-bounce monte-carlo ray tracing to decompose accurate material properties and lighting conditions of a NeRF scene.
+                </p>
+              </td>
+            </tr>
+      
+      <tr onmouseout="neuralf_stop()" onmouseover="neuralf_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
-            <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/zipnerf.mp4" type="video/mp4">
+            <div class="two" id='neuralf_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="imgs/Neural_Factorization.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video></div>
-            <img src='images/zipnerf.jpg' width="160">
+            <img src='imgs/Neural_Factorization.jpg' width="160">
           </div>
           <script type="text/javascript">
-            function zipnerf_start() {
-              document.getElementById('zipnerf_image').style.opacity = "1";
+            function neuralf_start() {
+              document.getElementById('neuralf_image').style.opacity = "1";
             }
 
-            function zipnerf_stop() {
-              document.getElementById('zipnerf_image').style.opacity = "0";
+            function neuralf_stop() {
+              document.getElementById('neuralf_image').style.opacity = "0";
             }
-            zipnerf_stop()
+            neuralf_stop()
           </script>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="http://jonbarron.info/zipnerf">
-            <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
+          <a href="imgs/Neural_Factorization.pdf">
+            <span class="papertitle">Neural Factorization of Shape, Material, and Lighting under Unknown Illumination</span>
           </a>
           <br>
-          <strong>Jonathan T. Barron</strong>,
-          <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-          <a href="https://phogzone.com/">Peter Hedman</a>
+          <strong>Yue Chen</strong>,
+          <a href="https://github.com/MohamedRamzy1">Mohamed Ebbed</a>,
+          <a href="https://github.com/burakcuhadar">Burak Cuhadar</a>,
+          <a href="https://peter-kocsis.github.io/">Peter Kocsis</a>
           <br>
-          <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Finalist)</strong></font>
+          <em>Internship 3DSSL</em>, 2022
           <br>
-          <a href="http://jonbarron.info/zipnerf">project page</a>
-          /
-          <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
-          /
-          <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
+          <a href="imgs/Neural_Factorization.pdf">report</a>
           <p></p>
           <p>
-          Combining mip-NeRF 360 and grid-based models like Instant NGP lets us reduce error rates by 8%&ndash;77% and accelerate training by 24x.
+            Performing 3D scene representation with implicit SDF and estimating light visibility with explicit mesh, reducing the visibility computation time from 150+ hours to 5 minutes.
           </p>
         </td>
       </tr>
-      
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src='imgs/visual-grounding.png'>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://github.com/YueChenGithub/visual-grounding/tree/master">
+            <span class="papertitle">3D Visual Grounding with Graph and Attention</span>
+          </a>
+          <br>
+          <strong>Yue Chen</strong>, 
+          <a href="https://github.com/T-Gu">Tao Gu</a>, 
+          <a href="https://daveredrum.github.io/">Dave Zhenyu Chen</a>
+          <br>
+          <em>ADL4CV Project</em>, 2021
+          <br>
+          <a href="https://github.com/YueChenGithub/visual-grounding/blob/master/docs/ADL4CVReport.pdf">report</a>
+          /
+          <a href="https://github.com/YueChenGithub/visual-grounding/tree/master">code</a>
+          <p></p>
+          <p>Incorporating graph neural networks to model the spatial relationships among object proposals, generating surrounding-aware features.</p>
+        </td>
+      </tr>
+
 
             
           </tbody></table>
