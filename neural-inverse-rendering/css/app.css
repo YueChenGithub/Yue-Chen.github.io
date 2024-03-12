@@ -157,3 +157,41 @@ span.highlight {
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
+
+
+/* Style for the table to ensure cells have equal width and content is centered */
+.relighting-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.relighting-table td {
+    text-align: center;
+    vertical-align: middle;
+    width: 33.33%; /* Equal width for each cell */
+}
+
+.dtu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.dtu-table td {
+  text-align: center;
+  vertical-align: middle;
+  width: 25%; /* Equal width for each cell */
+}
+
+
+/* Style for the table to ensure cells have equal width and content is centered */
+.bounce-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.bounce-table td {
+  text-align: center;
+  vertical-align: middle;
+  width: 50%; /* Equal width for each cell */
+}
+
+.custom-background {
+  background-color: #e9e9e9;
+}

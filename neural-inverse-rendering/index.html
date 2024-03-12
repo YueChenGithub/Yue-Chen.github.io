@@ -26,7 +26,7 @@
     <meta name="twitter:image" content="https://jonbarron.info/zipnerf/img/teaser.jpg" /> -->
 
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -58,31 +58,22 @@
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <a href="https://jonbarron.info/">
-                          Jonathan T. Barron
+                        <a href="https://yuechengithub.github.io/">
+                          Yue Chen
                         </a>
                     </li>
                     <li>
-                        <a href="http://bmild.github.io/">
-                            Ben Mildenhall
+                        <a href="https://peter-kocsis.github.io/">
+                            Peter Kocsis
                         </a>
                     </li>
                     <li>
-                        <a href="http://dorverbin.github.io/">
-                          Dor Verbin
+                        <a href="https://niessnerlab.org/">
+                            Matthias Nießner
                         </a>
                     </li>
-                    <li>
-                        <a href="https://pratulsrinivasan.github.io/">
-                          Pratul P. Srinivasan
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://phogzone.com/">
-                          Peter Hedman
-                        </a>
-                    </li>
-                    </br>Google
+                   
+                    </br>Technical University of Munich
                 </ul>
             </div>
         </div>
@@ -92,19 +83,19 @@
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href="https://arxiv.org/abs/2304.06706">
-                            <image src="img/zip_paper_image.jpg" height="60px">
-                                <h4><strong>Paper</strong></h4>
+                            <a href="https://github.com/YueChenGithub/neural-inverse-rendering/blob/main/docs/MA_Yue_Chen.pdf">
+                            <image src="img/thesis_icom.png" height="60px">
+                                <h4><strong>Thesis</strong></h4>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">
                             <image src="img/youtube_icon.png" height="60px">
                                 <h4><strong>Video</strong></h4>
                             </a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="https://github.com/jonbarron/camp_zipnerf">
+                            <a href="https://github.com/YueChenGithub/neural-inverse-rendering">
                             <image src="img/github.png" height="60px">
                                 <h4><strong>Code</strong></h4>
                             </a>
@@ -114,15 +105,13 @@
                 </div>
         </div>
 
-
-
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <video id="v0" width="100%" autoplay loop muted controls>
-                  <source src="img/teaser.mp4" type="video/mp4" />
-                </video>
-						</div>
+                <image src="img/overview.jpg" class="img-responsive" alt="overview" width="100%" >
+            </div>
         </div>
+
+
 
 
         <div class="row">
@@ -131,112 +120,198 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-Neural Radiance Field training can be accelerated through the use of grid-based representations in NeRF's learned mapping from spatial coordinates to colors and volumetric density. However, these grid-based approaches lack an explicit understanding of scale and therefore often introduce aliasing, usually in the form of jaggies or missing scene content. Anti-aliasing has previously been addressed by mip-NeRF 360, which reasons about sub-volumes along a cone rather than points along a ray, but this approach is not natively compatible with current grid-based techniques. We show how ideas from rendering and signal processing can be used to construct a technique that combines mip-NeRF 360 and grid-based models such as Instant NGP to yield error rates that are 8%-77% lower than either prior technique, and that trains 24x faster than mip-NeRF 360.
+                     Recent advances in neural rendering have achieved pinpoint reconstruction of 3D scenes from multi-view images. To enable scene editing under different lighting conditions, an increasing number of methods are integrating differentiable surface rendering into the pipelines. However, many of these methods rely heavily on simplified surface rendering algorithms, while considering primarily direct lighting or fixed indirect illumination only. We introduce a more realistic rendering pipeline that embraces multi-bounce Monte-Carlo path tracing. Benefiting from the multi-bounce light path estimation, our method can decompose high-quality material properties without necessitating additional prior knowledge. Additionally, our model can accurately estimate and reconstruct secondary shading effects, such as indirect illumination and self-reflection. We demonstrate the advantages of our model to baseline methods qualitatively and quantitatively across synthetic and real-world scenes.
                 </p>
             </div>
         </div>
 
+        <br>
+<!-- 
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Material Model
+                </h3>
+
+                <img src="img/material_model.png" class="img-responsive center-block" alt="overview" style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;">
+
+                <p class="text-justify">
+                    AAA
+                </p>
+
+            </div>
+        </div>
+
+        <br> -->
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Video
+                    Multi-bounce Monte-Carlo Ray Tracing
                 </h3>
-                <div class="text-center">
-                    <div style="position:relative;padding-top:56.25%;">
-                        <iframe src="https://youtube.com/embed/xrrhynRzC8k" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-<br>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    360° Video Flythroughs
-                </h3>
-                <div class="text-center">
-                    <div style="position:relative;padding-top:56.25%;">
-                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLzPoYEE6Aw7Jzjek1uEIPnpcTDL3u8tb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                        <!-- <iframe src="https://youtube.com/embed/jbE2ri8xEZo" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-<br>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Multisampling
-                </h3>
-				<table style="width: 100%; border-collapse: collapse;">
-				  <tr>
-				    <td style="text-align: center;">
-		                <video id="v0" width="100%" autoplay loop muted>
-		                  <source src="img/hexify_train.mp4" type="video/mp4" />
-		                </video>
-					</td>
-				    <td style="text-align: center;">
-		                <video id="v0" width="100%" autoplay loop muted>
-		                  <source src="img/hexify_test.mp4" type="video/mp4" />
-		                </video>
-					</td>
-				  </tr>
-				  <tr>
-				    <td style="text-align: center;">When Training</td>
-				    <td style="text-align: center;">When Rendering</td>
-				  </tr>
-				</table>
+
+
+                <img src="img/ray_tracing.png" class="img-responsive center-block" alt="overview" style="max-width: 50%; display: block; margin-left: auto; margin-right: auto;">
+
+
+
+
+
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="text-align: center;">
+                            <video class="video" width=100% id="bounce" loop playsinline autoplay muted src="img/bounce.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas height=0 class="videoMerge" id="bounceMerge"></canvas>
+                        </td>
+                        <td style="text-align: center;">
+                            <image src="img/gt.jpg" class="img-responsive" alt="overview" width="100%" >
+                        </td>
+                    </tr>
+
+                    
                 <p class="text-justify">
-                    We use multisampling to approximate the average NGP feature over a conical frustum, by constructing a 6-sample pattern that exactly matches the frustum's first and second moments. When training, we randomly rotate and flip (along the ray axis) each pattern, and when rendering we deterministically flip and rotate each adjacent pattern by 30 degrees.
+                    We develop a differentiable inverse path tracer that enables the simulation of light bouncing multiple times within a scene, utilizing Monte Carlo sampling. The simulation of multi-bounce light transport enables a precise reconstruction of the material properties.  By simulating an increased number of bounces, the precision of the reconstructed albedo is notably improved. This results in a reduction of indirect lighting being inaccurately embedded into the albedo.
                 </p>
+                
+
+                <table class="bounce-table">
+                    <tr>
+                        <td>Estimated Albedo</td>
+                        <td>GT Albedo</td>
+                    </tr>
+                </table>
+
+
+                
+
             </div>
         </div>
-<br>
+
+
+        <br>
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    XY aliasing
+                    Relighting Results Synthetic Data
                 </h3>
-                <video class="video" width=100% id="xyalias" loop playsinline autoplay muted src="img/xy_alias_swipe_crf27.mp4" onplay="resizeAndPlay(this)"></video>
-                <canvas height=0 class="videoMerge" id="xyaliasMerge"></canvas>
-                <p class="text-justify">
-                    A naive baseline (left) combining mip-NeRF 360 and Instant NGP results in aliasing as the camera moves laterally. Our full method (right) produces prefiltered renderings that do not flicker or shimmer.
-                </p>
-            </div>
-        </div>
-           
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Z aliasing
-                </h3>
+
                 <video id="v0" width="100%" autoplay loop muted>
-                  <source src="img/z_alias_pdf_labeled.m4v" type="video/mp4" />
+                    <source src="img/lego_relighting.mp4" type="video/mp4" />
                 </video>
+
+                <table class="relighting-table">
+                    <tr>
+                        <td>Baseline</td>
+                        <td>Ours</td>
+                        <td>Ground Truth</td>
+                    </tr>
+                </table>
+
+                <video id="v1" width="100%" autoplay loop muted>
+                    <source src="img/hotdog_relighting.mp4" type="video/mp4" />
+                </video>
+
+                <table class="relighting-table">
+                    <tr>
+                        <td>Baseline</td>
+                        <td>Ours</td>
+                        <td>Ground Truth</td>
+                    </tr>
+                </table>
+
                 <p class="text-justify">
-                    The proposal network used for resampling points along rays in mip-NeRF 360 results in an artifact we refer to as <em>z-aliasing</em>, where foreground content alternately appears and disappears as the camera moves toward or away from scene content. Z-aliasing occurs when the initial set of samples from the proposal network is not dense enough and misses thin structures, such as the chair above. Missed content can not be recovered by later rounds of sampling, since no future samples will be placed at that location along the ray. Our improvements to proposal network supervision result in a prefiltered proposal output that preserves the foreground object for all frames in this sequence. The plots above depict samples along a ray for three rounds of resampling (blue, orange, and green lines), with the y axis showing rendering weight (how much each interval contributes to the final rendered color), as a normalized probability density.
+                    In comparison to the baseline approach, our method features more accurate color representation, enhanced realism in specularity, and significantly improved secondary lighting effects (e.g. self-reflection).
                 </p>
             </div>
         </div>
 
+        <br>
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Citation
+                    Relighting Results Real-world Data
                 </h3>
-                <div class="form-group col-md-10 col-md-offset-1">
-                    <textarea id="bibtex" class="form-control" readonly>
-@article{barron2023zipnerf,
-    title={Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields},
-    author={Jonathan T. Barron and Ben Mildenhall and 
-            Dor Verbin and Pratul P. Srinivasan and Peter Hedman},
-    journal={ICCV},
-    year={2023}
-}</textarea>
-                </div>
+
+                <image src="img/dtu.png" class="img-responsive" alt="overview" width="100%" ></image>
+
+                <table class="dtu-table">
+                    <tr>
+                        <td>Reference</td>
+                        <td>Relighting 1</td>
+                        <td>Relighting 2</td>
+                        <td>Relighting 3</td>
+                    </tr>
+                </table>
+
+
             </div>
         </div>
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Bounce
+                </h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="text-align: center;">
+                            <video class="video" width=100% id="lego" loop playsinline autoplay muted src="img/lego_exp.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas height=0 class="videoMerge" id="legoMerge"></canvas>
+                        </td>
+                        <td style="text-align: center;">
+                            <video id="v0" width="100%" autoplay loop muted>
+                                <source src="img/lego_gt.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            <video class="video" width=100% id="hotdog" loop playsinline autoplay muted src="img/hotdog_exp.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas height=0 class="videoMerge" id="hotdogMerge"></canvas>
+                        </td>
+                        <td style="text-align: center;">
+                            <video id="v0" width="100%" autoplay loop muted>
+                                <source src="img/hotdog_gt.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="bounce-table">
+                    <tr>
+                        <td>Estimated Albedo</td>
+                        <td>GT Albedo</td>
+                    </tr>
+                </table>
+
+                
+                <p class="text-justify">
+                    AAA
+                </p>
+            </div>
+        </div> -->
+        
+        <br>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Material Editing Results
+                </h3>
+
+                <video id="v0" width="100%" autoplay loop muted>
+                    <source src="img/material_editing.mp4" type="video/mp4" />
+                </video>
+
+                <p class="text-justify">
+                    We can also control the diffuse color and the amount of speucularity.
+                </p>
+            </div>
+        </div>
+
+        <br>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -244,7 +319,7 @@ Neural Radiance Field training can be accelerated through the use of grid-based 
                     Acknowledgements
                 </h3>
                 <p class="text-justify">
-                Thanks to Janne Kontkanen, Rick Szeliski, and David Salesin for their comments on the text, and to Ricardo Martin-Brualla, Keunhong Park, Ben Poole, Aleksander Hołyński, Etienne Pot, Kostas Rematas, Daniel Duckworth, Marcos Seefelder, Cardin Moffett, and Peter Zhizhin for their advice and help.
+                Thanks to Peter Kocsis for his guidance, thanks to Minghua Chen for her supports, and to Mohamed Ebbed for his advice.  Special thanks to my cats, Huajiao and Danta, for their emotional support.
                     <br><br>
                 The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a> and <a href="https://dorverbin.github.io/refnerf">Ref-NeRF</a>.
                 </p>
